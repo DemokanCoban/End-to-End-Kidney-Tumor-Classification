@@ -73,3 +73,111 @@ FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/data_ingestio
 [2024-03-15 16:20:53,228: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<< 
 
 x==========x]
+[2024-03-18 20:42:46,107: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-03-18 20:42:46,118: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-18 20:42:46,119: INFO: common: created directory at: artifacts]
+[2024-03-18 20:42:46,119: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-03-18 20:43:34,164: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-03-18 20:43:34,166: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-18 20:43:34,167: INFO: common: created directory at: artifacts]
+[2024-03-18 20:43:34,168: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-03-18 20:48:46,857: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-03-19 19:06:20,411: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<]
+[2024-03-19 19:06:20,413: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-03-19 19:06:20,414: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-19 19:06:20,414: INFO: common: created directory at: artifacts]
+[2024-03-19 19:06:20,414: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-19 19:06:20,414: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1Mb1kHZD0FSa3VrV7xebCy_7VkJ7rgevf/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-19 19:17:53,860: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<]
+[2024-03-19 19:17:53,862: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-03-19 19:17:53,863: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-19 19:17:53,863: INFO: common: created directory at: artifacts]
+[2024-03-19 19:17:53,863: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-19 19:17:53,863: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1Mb1kHZD0FSa3VrV7xebCy_7VkJ7rgevf/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-19 19:27:11,075: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1Mb1kHZD0FSa3VrV7xebCy_7VkJ7rgevf/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-19 19:27:17,965: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<< 
+
+x==========x]
+[2024-03-19 19:29:09,698: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<]
+[2024-03-19 19:29:09,700: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-03-19 19:29:09,700: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-19 19:29:09,701: INFO: common: created directory at: artifacts]
+[2024-03-19 19:29:09,701: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-19 19:29:09,701: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1Mb1kHZD0FSa3VrV7xebCy_7VkJ7rgevf/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-19 19:38:12,223: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1Mb1kHZD0FSa3VrV7xebCy_7VkJ7rgevf/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-19 19:38:20,150: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<< 
+
+x==========x]
+[2024-03-19 19:38:20,151: INFO: main: ****************]
+[2024-03-19 19:38:20,151: INFO: main: >>>>>>>> stage Base Model Preparation started! <<<<<<<<]
+[2024-03-19 19:38:20,152: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-03-19 19:38:20,153: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-19 19:38:20,153: INFO: common: created directory at: artifacts]
+[2024-03-19 19:38:20,154: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-03-19 19:38:20,154: ERROR: main: name 'Path' is not defined]
+Traceback (most recent call last):
+  File "main.py", line 23, in <module>
+    obj.main()
+  File "/home/dc/e2e_kidney_disease_classifier/End-to-End-Kidney-Tumor-Classification/src/cnnClassifier/pipeline/stage_02_prepare_base_model.py", line 14, in main
+    prepare_base_model_config = config.get_prepare_base_model_config()
+  File "/home/dc/e2e_kidney_disease_classifier/End-to-End-Kidney-Tumor-Classification/src/cnnClassifier/config/configuration.py", line 39, in get_prepare_base_model_config
+    root_dir=Path(config.root_dir),
+NameError: name 'Path' is not defined
+[2024-03-19 19:42:38,202: INFO: main: ****************]
+[2024-03-19 19:42:38,202: INFO: main: >>>>>>>> stage Base Model Preparation started! <<<<<<<<]
+[2024-03-19 19:42:38,203: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-03-19 19:42:38,204: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-19 19:42:38,204: INFO: common: created directory at: artifacts]
+[2024-03-19 19:42:38,204: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-03-19 19:42:39,848: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-03-19 19:42:40,026: INFO: main: >>>>>>>> stage Base Model Preparation completed! <<<<<<<
+
+x===========x]
+[2024-03-19 21:10:05,252: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-03-19 21:10:05,261: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-19 21:10:05,262: INFO: common: created directory at: artifacts]
+[2024-03-19 21:10:05,262: INFO: common: created directory at: artifacts/training]
+[2024-03-20 10:02:09,972: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-03-20 10:02:09,974: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-20 10:02:09,975: INFO: common: created directory at: artifacts]
+[2024-03-20 10:02:09,975: INFO: common: created directory at: artifacts/training]
+[2024-03-20 10:02:09,978: INFO: common: created directory at: artifacts/training/tmp/ckpt]
+[2024-03-20 11:12:17,316: INFO: main: ****************]
+[2024-03-20 11:12:17,316: INFO: main: >>>>>>>> stage Model Training started! <<<<<<<<]
+[2024-03-20 11:12:17,317: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-03-20 11:12:17,318: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-20 11:12:17,318: INFO: common: created directory at: artifacts]
+[2024-03-20 11:12:17,318: INFO: common: created directory at: artifacts/training]
+[2024-03-20 11:12:17,811: ERROR: main: 'TrainingConfig' object has no attribute 'checkpoint_path']
+Traceback (most recent call last):
+  File "main.py", line 37, in <module>
+    obj.main()
+  File "/home/dc/e2e_kidney_disease_classifier/End-to-End-Kidney-Tumor-Classification/src/cnnClassifier/pipeline/stage_03_model_training.py", line 23, in main
+    keras.callbacks.ModelCheckpoint(filepath=training_config.checkpoint_path),
+AttributeError: 'TrainingConfig' object has no attribute 'checkpoint_path'
+[2024-03-20 11:14:50,609: INFO: main: ****************]
+[2024-03-20 11:14:50,610: INFO: main: >>>>>>>> stage Model Training started! <<<<<<<<]
+[2024-03-20 11:14:50,611: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-03-20 11:14:50,612: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-20 11:14:50,612: INFO: common: created directory at: artifacts]
+[2024-03-20 11:14:50,612: INFO: common: created directory at: artifacts/training]
+[2024-03-20 11:14:50,612: INFO: common: created directory at: artifacts/training/tmp/ckpt]
+[2024-03-20 11:14:50,612: ERROR: main: __init__() got an unexpected keyword argument 'checkpoint_path']
+Traceback (most recent call last):
+  File "main.py", line 37, in <module>
+    obj.main()
+  File "/home/dc/e2e_kidney_disease_classifier/End-to-End-Kidney-Tumor-Classification/src/cnnClassifier/pipeline/stage_03_model_training.py", line 16, in main
+    training_config = config.get_training_config()
+  File "/home/dc/e2e_kidney_disease_classifier/End-to-End-Kidney-Tumor-Classification/src/cnnClassifier/config/configuration.py", line 65, in get_training_config
+    training_config = TrainingConfig(
+TypeError: __init__() got an unexpected keyword argument 'checkpoint_path'
+[2024-03-20 11:16:41,416: INFO: main: ****************]
+[2024-03-20 11:16:41,416: INFO: main: >>>>>>>> stage Model Training started! <<<<<<<<]
+[2024-03-20 11:16:41,417: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-03-20 11:16:41,418: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-20 11:16:41,418: INFO: common: created directory at: artifacts]
+[2024-03-20 11:16:41,418: INFO: common: created directory at: artifacts/training]
+[2024-03-20 11:16:41,418: INFO: common: created directory at: artifacts/training/tmp/ckpt]
+[2024-03-20 11:26:38,139: INFO: main: >>>>>>>> stage Model Training completed! <<<<<<<
+
+x===========x]
