@@ -6,3 +6,6 @@ venv/
 /site
 artifacts/*
 artifacts
+model_checkpoints/*
+mlflow.yaml
+./mlflow.yaml

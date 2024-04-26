@@ -19,3 +19,10 @@ conda activate env_name
 ```bash
 pip install -r requirements.txt
 ```
+
+### Step 3: MLFlow, export your own environment variables for DagsHub
+```bash
+export MLFLOW_TRACKING_URI=https://dagshub.com/username/repo-name.mlflow
+export MLFLOW_TRACKING_USERNAME=your_username
+export MLFLOW_TRACKING_PASSWORD=your_password
+```

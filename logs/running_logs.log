@@ -181,3 +181,73 @@ TypeError: __init__() got an unexpected keyword argument 'checkpoint_path'
 [2024-03-20 11:26:38,139: INFO: main: >>>>>>>> stage Model Training completed! <<<<<<<
 
 x===========x]
+[2024-04-26 18:15:16,200: INFO: main: **********]
+[2024-04-26 18:15:16,200: INFO: main: >>>>>stage Evaluation Stage started <<<<<]
+[2024-04-26 18:15:16,200: ERROR: main: get_evaluation_config() missing 1 required positional argument: 'self']
+Traceback (most recent call last):
+  File "main.py", line 50, in <module>
+    obj.main()
+  File "/home/dc/e2e_kidney_disease_classifier/End-to-End-Kidney-Tumor-Classification/src/cnnClassifier/pipeline/stage_04_model_evaluation.py", line 14, in main
+    eval_config = config.get_evaluation_config()
+TypeError: get_evaluation_config() missing 1 required positional argument: 'self'
+[2024-04-26 18:17:55,057: INFO: main: **********]
+[2024-04-26 18:17:55,057: INFO: main: >>>>>stage Evaluation Stage started <<<<<]
+[2024-04-26 18:17:55,058: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-04-26 18:17:55,059: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-26 18:17:55,059: INFO: common: created directory at: artifacts]
+[2024-04-26 18:17:55,059: ERROR: main: 'ConfigurationManager' object has no attribute 'mlflow']
+Traceback (most recent call last):
+  File "main.py", line 50, in <module>
+    obj.main()
+  File "/home/dc/e2e_kidney_disease_classifier/End-to-End-Kidney-Tumor-Classification/src/cnnClassifier/pipeline/stage_04_model_evaluation.py", line 14, in main
+    eval_config = config.get_evaluation_config()
+  File "/home/dc/e2e_kidney_disease_classifier/End-to-End-Kidney-Tumor-Classification/src/cnnClassifier/config/configuration.py", line 84, in get_evaluation_config
+    mlflow_uri=self.mlflow.dagshub.MLFLOW_TRACKING_URI,
+AttributeError: 'ConfigurationManager' object has no attribute 'mlflow'
+[2024-04-26 18:22:52,589: INFO: main: **********]
+[2024-04-26 18:22:52,589: INFO: main: >>>>>stage Evaluation Stage started <<<<<]
+[2024-04-26 18:22:52,591: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-04-26 18:22:52,591: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-26 18:22:52,592: INFO: common: yaml file: mlflow.yaml loaded successfully]
+[2024-04-26 18:22:52,592: INFO: common: created directory at: artifacts]
+[2024-04-26 18:22:54,266: ERROR: main: 'EvaluationConfig' object has no attribute 'params_image_size']
+Traceback (most recent call last):
+  File "main.py", line 50, in <module>
+    obj.main()
+  File "/home/dc/e2e_kidney_disease_classifier/End-to-End-Kidney-Tumor-Classification/src/cnnClassifier/pipeline/stage_04_model_evaluation.py", line 16, in main
+    evaluation.evaluation()
+  File "/home/dc/e2e_kidney_disease_classifier/End-to-End-Kidney-Tumor-Classification/src/cnnClassifier/components/model_evaluation.py", line 40, in evaluation
+    self._valid_generator()
+  File "/home/dc/e2e_kidney_disease_classifier/End-to-End-Kidney-Tumor-Classification/src/cnnClassifier/components/model_evaluation.py", line 20, in _valid_generator
+    target_size=self.config.params_image_size[:-1],
+AttributeError: 'EvaluationConfig' object has no attribute 'params_image_size'
+[2024-04-26 18:26:45,746: INFO: main: **********]
+[2024-04-26 18:26:45,746: INFO: main: >>>>>stage Evaluation Stage started <<<<<]
+[2024-04-26 18:26:45,748: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-04-26 18:26:45,748: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-26 18:26:45,749: INFO: common: yaml file: mlflow.yaml loaded successfully]
+[2024-04-26 18:26:45,749: INFO: common: created directory at: artifacts]
+[2024-04-26 18:26:47,279: ERROR: main: 'EvaluationConfig' object has no attribute 'params_image_size']
+Traceback (most recent call last):
+  File "main.py", line 50, in <module>
+    obj.main()
+  File "/home/dc/e2e_kidney_disease_classifier/End-to-End-Kidney-Tumor-Classification/src/cnnClassifier/pipeline/stage_04_model_evaluation.py", line 16, in main
+    evaluation.evaluation()
+  File "/home/dc/e2e_kidney_disease_classifier/End-to-End-Kidney-Tumor-Classification/src/cnnClassifier/components/model_evaluation.py", line 40, in evaluation
+    self._valid_generator()
+  File "/home/dc/e2e_kidney_disease_classifier/End-to-End-Kidney-Tumor-Classification/src/cnnClassifier/components/model_evaluation.py", line 20, in _valid_generator
+    target_size=self.config.params_image_size[:-1],
+AttributeError: 'EvaluationConfig' object has no attribute 'params_image_size'
+[2024-04-26 18:34:00,183: INFO: main: **********]
+[2024-04-26 18:34:00,184: INFO: main: >>>>>stage Evaluation Stage started <<<<<]
+[2024-04-26 18:34:00,185: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-04-26 18:34:00,186: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-26 18:34:00,186: INFO: common: yaml file: mlflow.yaml loaded successfully]
+[2024-04-26 18:34:00,186: INFO: common: created directory at: artifacts]
+[2024-04-26 18:37:06,852: INFO: common: json file saved at: scores.json]
+[2024-04-26 18:37:06,853: INFO: common: json file saved at: scores.json]
+[2024-04-26 18:37:09,377: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2024-04-26 18:37:09,853: INFO: builder_impl: Assets written to: /tmp/tmps_f6jylb/model/data/model/assets]
+[2024-04-26 18:38:08,546: INFO: main: >>>>>stage Evaluation Stage completed <<<<<
+
+x==========x]
