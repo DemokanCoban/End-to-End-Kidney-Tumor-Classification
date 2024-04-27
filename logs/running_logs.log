@@ -251,3 +251,123 @@ AttributeError: 'EvaluationConfig' object has no attribute 'params_image_size'
 [2024-04-26 18:38:08,546: INFO: main: >>>>>stage Evaluation Stage completed <<<<<
 
 x==========x]
+[2024-04-26 22:51:31,881: INFO: stage_01_data_ingestion: >>>>>>> stage Data Ingestion Stage started <<<<<<<]
+[2024-04-26 22:51:31,882: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-04-26 22:51:31,882: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-26 22:51:31,883: INFO: common: yaml file: mlflow.yaml loaded successfully]
+[2024-04-26 22:51:31,883: INFO: common: created directory at: artifacts]
+[2024-04-26 22:51:31,883: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-04-26 22:51:31,883: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1Mb1kHZD0FSa3VrV7xebCy_7VkJ7rgevf/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-04-26 23:07:31,802: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1Mb1kHZD0FSa3VrV7xebCy_7VkJ7rgevf/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-04-26 23:07:38,712: INFO: stage_01_data_ingestion: >>>>>>> stage Data Ingestion Stage completed <<<<<<< 
+
+x==========x]
+[2024-04-26 23:16:04,608: INFO: stage_01_data_ingestion: >>>>>>> stage Data Ingestion Stage started <<<<<<<]
+[2024-04-26 23:16:04,610: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-04-26 23:16:04,610: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-26 23:16:04,611: INFO: common: yaml file: mlflow.yaml loaded successfully]
+[2024-04-26 23:16:04,611: INFO: common: created directory at: artifacts]
+[2024-04-26 23:16:04,611: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-04-26 23:16:04,611: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1Mb1kHZD0FSa3VrV7xebCy_7VkJ7rgevf/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-04-26 23:16:28,699: INFO: stage_01_data_ingestion: >>>>>>> stage Data Ingestion Stage started <<<<<<<]
+[2024-04-26 23:16:28,700: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-04-26 23:16:28,701: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-26 23:16:28,701: INFO: common: yaml file: mlflow.yaml loaded successfully]
+[2024-04-26 23:16:28,701: INFO: common: created directory at: artifacts]
+[2024-04-26 23:16:28,701: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-04-26 23:16:28,701: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1Mb1kHZD0FSa3VrV7xebCy_7VkJ7rgevf/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-04-26 23:38:38,210: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1Mb1kHZD0FSa3VrV7xebCy_7VkJ7rgevf/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-04-26 23:38:45,388: INFO: stage_01_data_ingestion: >>>>>>> stage Data Ingestion Stage completed <<<<<<< 
+
+x==========x]
+[2024-04-26 23:39:04,088: INFO: stage_02_prepare_base_model: ****************]
+[2024-04-26 23:39:04,088: INFO: stage_02_prepare_base_model: >>>>>>>> stage Prepare base model started! <<<<<<<<]
+[2024-04-26 23:39:04,090: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-04-26 23:39:04,091: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-26 23:39:04,091: INFO: common: yaml file: mlflow.yaml loaded successfully]
+[2024-04-26 23:39:04,091: INFO: common: created directory at: artifacts]
+[2024-04-26 23:39:04,091: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-04-26 23:39:05,695: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-04-26 23:39:05,914: INFO: stage_02_prepare_base_model: >>>>>>>> stage Prepare base model completed! <<<<<<<
+
+x===========x]
+[2024-04-26 23:40:15,764: INFO: stage_03_model_training: ************************]
+[2024-04-26 23:40:15,764: INFO: stage_03_model_training: >>>>>>stage Training started <<<<<<<]
+[2024-04-26 23:40:15,766: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-04-26 23:40:15,766: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-26 23:40:15,767: INFO: common: yaml file: mlflow.yaml loaded successfully]
+[2024-04-26 23:40:15,767: INFO: common: created directory at: artifacts]
+[2024-04-26 23:40:15,767: INFO: common: created directory at: artifacts/training]
+[2024-04-26 23:40:15,767: INFO: common: created directory at: artifacts/training/tmp/ckpt]
+[2024-04-26 23:49:49,387: INFO: stage_03_model_training: >>>>>>stage Training completed <<<<<<<
+
+x==========x]
+[2024-04-26 23:49:56,097: INFO: stage_04_model_evaluation: **********]
+[2024-04-26 23:49:56,097: INFO: stage_04_model_evaluation: >>>>>stage Evaluation Stage started <<<<<]
+[2024-04-26 23:49:56,098: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-04-26 23:49:56,099: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-26 23:49:56,099: INFO: common: yaml file: mlflow.yaml loaded successfully]
+[2024-04-26 23:49:56,099: INFO: common: created directory at: artifacts]
+[2024-04-26 23:52:44,362: INFO: common: json file saved at: scores.json]
+[2024-04-26 23:52:44,362: INFO: common: json file saved at: scores.json]
+[2024-04-26 23:52:47,048: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2024-04-26 23:52:47,357: INFO: builder_impl: Assets written to: /tmp/tmpba3mn4oc/model/data/model/assets]
+[2024-04-26 23:53:21,117: INFO: stage_04_model_evaluation: >>>>>stage Evaluation Stage completed <<<<<
+
+x==========x]
+[2024-04-27 12:26:48,641: INFO: main: **********]
+[2024-04-27 12:26:48,641: INFO: main: >>>>>stage Evaluation Stage started <<<<<]
+[2024-04-27 12:26:48,642: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-04-27 12:26:48,643: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-27 12:26:48,644: INFO: common: yaml file: mlflow.yaml loaded successfully]
+[2024-04-27 12:26:48,644: INFO: common: created directory at: artifacts]
+[2024-04-27 12:29:43,404: INFO: common: json file saved at: scores.json]
+[2024-04-27 12:29:43,408: INFO: common: json file saved at: scores.json]
+[2024-04-27 12:29:45,669: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2024-04-27 12:29:46,140: INFO: builder_impl: Assets written to: /tmp/tmp_517irsg/model/data/model/assets]
+[2024-04-27 12:30:34,692: INFO: main: >>>>>stage Evaluation Stage completed <<<<<
+
+x==========x]
+[2024-04-27 12:31:06,111: INFO: main: ****************]
+[2024-04-27 12:31:06,111: INFO: main: >>>>>>>> stage Base Model Preparation started! <<<<<<<<]
+[2024-04-27 12:31:06,112: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-04-27 12:31:06,113: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-27 12:31:06,114: INFO: common: yaml file: mlflow.yaml loaded successfully]
+[2024-04-27 12:31:06,114: INFO: common: created directory at: artifacts]
+[2024-04-27 12:31:06,114: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-04-27 12:31:07,663: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-04-27 12:31:07,922: INFO: main: >>>>>>>> stage Base Model Preparation completed! <<<<<<<
+
+x===========x]
+[2024-04-27 12:31:07,923: INFO: main: ****************]
+[2024-04-27 12:31:07,923: INFO: main: >>>>>>>> stage Model Training started! <<<<<<<<]
+[2024-04-27 12:31:07,924: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-04-27 12:31:07,925: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-27 12:31:07,925: INFO: common: yaml file: mlflow.yaml loaded successfully]
+[2024-04-27 12:31:07,925: INFO: common: created directory at: artifacts]
+[2024-04-27 12:31:07,925: INFO: common: created directory at: artifacts/training]
+[2024-04-27 12:31:07,925: INFO: common: created directory at: artifacts/training/tmp/ckpt]
+[2024-04-27 12:40:44,490: INFO: main: >>>>>>>> stage Model Training completed! <<<<<<<
+
+x===========x]
+[2024-04-27 12:40:44,490: INFO: main: **********]
+[2024-04-27 12:40:44,490: INFO: main: >>>>>stage Evaluation Stage started <<<<<]
+[2024-04-27 12:40:44,492: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-04-27 12:40:44,493: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-27 12:40:44,493: INFO: common: yaml file: mlflow.yaml loaded successfully]
+[2024-04-27 12:40:44,493: INFO: common: created directory at: artifacts]
+[2024-04-27 12:43:39,307: INFO: common: json file saved at: scores.json]
+[2024-04-27 12:43:39,315: INFO: common: json file saved at: scores.json]
+[2024-04-27 12:43:41,986: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2024-04-27 12:43:42,349: INFO: builder_impl: Assets written to: /tmp/tmpe9ns2m5e/model/data/model/assets]
+[2024-04-27 12:44:12,966: INFO: main: >>>>>stage Evaluation Stage completed <<<<<
+
+x==========x]
+[2024-04-27 12:46:26,263: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.108:8080]
+[2024-04-27 12:46:26,263: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-04-27 12:46:36,416: INFO: _internal: 127.0.0.1 - - [27/Apr/2024 12:46:36] "GET / HTTP/1.1" 200 -]
+[2024-04-27 12:46:59,282: INFO: _internal: 127.0.0.1 - - [27/Apr/2024 12:46:59] "POST /predict HTTP/1.1" 200 -]
+[2024-04-27 12:47:27,692: INFO: _internal: 127.0.0.1 - - [27/Apr/2024 12:47:27] "POST /predict HTTP/1.1" 200 -]

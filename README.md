@@ -26,3 +26,12 @@ export MLFLOW_TRACKING_URI=https://dagshub.com/username/repo-name.mlflow
 export MLFLOW_TRACKING_USERNAME=your_username
 export MLFLOW_TRACKING_PASSWORD=your_password
 ```
+
+### Step 4: DVC
+tracking the changes in the pipeline
+```bash
+dvc init
+dvc repro
+```
+
+### Step 5: AWS & CI/CD WITH GITHUB ACTIONS
