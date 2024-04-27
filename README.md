@@ -67,3 +67,5 @@ dvc repro
         -AWS_REGION = eu-central-1 (can be checked from the aws profile)
         -AWS_ECR_LOGIN_URI = uri(from step 3)
         -ECR_REPOSITORY_NAME = repo_name(from step 3)
+
+Go to EC2 instance-> Security-> Security group-> Edit inbound rules-> Add rule-> select Custom TCP as type, enter port (8080), CIDR Block 0.0.0.0/0-> Save rule. After that, copy the public ip address and append the port number ":8080" to access the app hosted by EC2
