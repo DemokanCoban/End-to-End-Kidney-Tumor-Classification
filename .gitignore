@@ -10,3 +10,4 @@ model_checkpoints/*
 mlflow.yaml
 ./mlflow.yaml
 logs
+scores.json
